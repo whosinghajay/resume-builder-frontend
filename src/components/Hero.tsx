@@ -2,18 +2,22 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <main className="bg-purple-100 pl-40 pr-40">
-      <section className="max-w-2xl ml-auto mr-auto pt-4 flex flex-col place-items-center justify-center font-bold font-roboto">
+    <main className="bg-purple-100 sm:pl-40 sm:pr-40 pl-10 pr-10 flex">
+      <section className="max-w-2xl ml-auto mr-auto pt-4 flex flex-col place-items-center justify-center font-semibold font-notoSans leading-loose">
         <p className="uppercase font-medium text-xs font-sans text-slate-600 pt-4 pb-4">
           Best online resume builder.
         </p>
-        <p className="text-slate-900 text-4xl mr-40 pl-8">Your success</p>
-        <p className="text-slate-900 text-4xl ml-40">Story begins</p>
-        <p className="text-slate-900 text-4xl">
-          with a <span className="text-blue-600">resume</span>
+        <p className="text-slate-800 text-4xl">Your success story </p>
+        <p className="text-slate-800 text-4xl">
+          begins with a <span className="text-blue-600">resume</span>.
         </p>
 
-        <button className="bg-blue-600 text-white font-semibold rounded-lg p-2 pr-5 pl-5 mt-5 mb-5 flex place-items-center gap-2">
+        <div className="font-light mt-5 leading-7 text-slate-600 ">
+          <p>Craft your perfect resume. Stand out.</p>
+          <p>Get hired. Start building your future today!</p>
+        </div>
+
+        <button className="bg-blue-600 text-white font-semibold rounded-lg p-2 pr-5 pl-5 mt-8 mb-8 flex place-items-center gap-2">
           View Templates <FaLongArrowAltRight opacity={0.7} />
         </button>
 
