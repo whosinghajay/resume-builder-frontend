@@ -53,7 +53,7 @@ export default function Carousal() {
         autoplay={{ delay: 3000 }}
       >
         {slides.map((slideContent, index) => (
-          <SwiperSlide key={slideContent} virtualIndex={index}>
+          <SwiperSlide key={slideContent} virtualIndex={index} className="hover:bg-slate-400">
             <Link to={"/createResume"}>{slideContent}</Link>
           </SwiperSlide>
         ))}

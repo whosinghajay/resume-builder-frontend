@@ -8,6 +8,7 @@ const Signup = lazy(() => import("./pages/Signup"));
 const Login = lazy(() => import("./pages/Login"));
 const ResumePage = lazy(() => import("./pages/ResumePage"));
 const CreateResume = lazy(() => import("./pages/CreateResume"));
+const ResumeTemplate = lazy(() => import("./pages/ResumeTemplates"));
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/createResume" element={<CreateResume />} />
+          <Route path="/templates" element={<ResumeTemplate />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
